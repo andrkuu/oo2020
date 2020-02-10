@@ -6,6 +6,8 @@ public class HelloWorld {
 
     static String wall = "|";
     static String floor = "-";
+    static String roofLeft = "/";
+    static String roofRight = "\\";
 
     public static String genSpace(int length){
         return String.join("", Collections.nCopies(length, " "));
@@ -13,8 +15,7 @@ public class HelloWorld {
 
     public static String drawRoof(int width){
 
-        String roofLeft = "/";
-        String roofRight = "\\";
+
         String between = "";
 
         String roof = "";
@@ -38,14 +39,14 @@ public class HelloWorld {
 
     public static String drawWall(int length, int width){
 
-
-        System.out.print(" ");
+        System.out.print(wall);
         for (int i = 0; i <width; i++) {
             System.out.print(floor);
         }
+        System.out.print(wall);
         System.out.println();
         for (int i = 0; i <length; i++) {
-            System.out.println("|" + genSpace(width) +"|");
+            System.out.println(wall + genSpace(width) + wall);
         }
 
         return "";
@@ -64,13 +65,9 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        // kaks for tsüklit üksteise sees
-
 
         String space = " ";
 
-
-        int a = 10;
         int width = 20;
         int height = 7;
         int floors = 3;
