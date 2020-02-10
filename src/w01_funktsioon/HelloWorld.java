@@ -148,7 +148,7 @@ public class HelloWorld {
         String space = " ";
 
         rooms = 3;
-        int width = 10;
+        int width = 20;
         int height = 3;
         int floors = 3;
         drawRoof(width);
@@ -157,6 +157,16 @@ public class HelloWorld {
 
         //drawCube(50,6);
         drawCube(width-2,3);
+
+        /*
+        for (int i = 7; i <20; i++) {
+            drawRoof(i);
+            drawCube(i-2,3);
+            System.out.println();
+        }*/
+
+
+
         //drawCube(width/2,4);
         //drawCube(4,6);
         //drawCube(8);
