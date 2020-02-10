@@ -5,12 +5,17 @@ import java.util.Collections;
 public class HelloWorld {
 
     static String wall = "|";
-    static String floor = "-";
+    static String floor = "─";
     static String roofLeft = "/";
     static String roofRight = "\\";
+    static int rooms = 3;
 
     public static String genSpace(int length){
         return String.join("", Collections.nCopies(length, " "));
+    }
+
+    public static String genSymbol(int length, String s){
+        return String.join("", Collections.nCopies(length, s));
     }
 
     public static String drawRoof(int width){
@@ -23,16 +28,26 @@ public class HelloWorld {
         String spaces = "";
         int c = 0;
 
-        for (int a = width; a > 0; a--) {
-            line += genSpace(a) + roofLeft + genSpace(c) + roofRight;
+        int kimney = 5;
 
-            //roof += roofRight;
+        for (int a = width; a > 0; a--) {
+            if (a == kimney){
+                line += genSpace(a) + roofLeft + genSpace(c) + roofRight;
+            }
+            else if(a == kimney+1){
+                line += genSpace(a) + roofLeft + genSpace(c) + roofRight;
+            }
+            else{
+                line += genSpace(a) + roofLeft + genSpace(c) + roofRight;
+            }
+
             roof = roof + line + "\n";
+
             line = "";
             c+=2;
         }
         System.out.print(roof);
-
+        System.out.println(" " + genSymbol(width*2,"─"));
 
         return between + roofRight;
     }
@@ -45,8 +60,21 @@ public class HelloWorld {
         }
         System.out.print(wall);
         System.out.println();
+        String space = "";
+
+
+
         for (int i = 0; i <length; i++) {
-            System.out.println(wall + genSpace(width) + wall);
+
+            for (int j = 0; j <=5; j++) {
+               space = genSpace(width/rooms);
+               space += wall;
+               space += genSpace(width/rooms);
+               space += wall;
+               space += genSpace(width/rooms);
+               space += wall;
+            }
+            System.out.println(wall + space);
         }
 
         return "";
@@ -63,17 +91,77 @@ public class HelloWorld {
         }
     }
 
+    public static void drawCube(int x, int y)
+    {
+
+
+        String line = "";
+        int c = 0;
+        String floor = "─";
+        String wall = "│";
+        //System.out.println((x+2/10)*2);
+        String shift = genSpace(((x+2)/10)*2);
+        /*
+        for (int a = x-5; a > 0; a--) {
+
+            line += genSpace(a) + roofLeft + genSpace(x*2) + roofLeft +"\n";;
+
+            //line = "";
+            c+=2;
+        }
+        System.out.print(line);
+        */
+        System.out.println();
+        System.out.print(shift);
+        for (int j = 0; j <y; j++) {
+            System.out.print("┎");
+            for (int i = 0; i <x/2; i++) {
+                System.out.print(floor);
+            }
+            System.out.print("┒");
+        }
+
+
+        System.out.print(shift);
+        for (int j = 0; j <x-6; j++) {
+            System.out.println("");
+            System.out.print(shift);
+            for (int i = 0; i <y; i++) {
+                System.out.print(wall + genSpace(x/2) + wall);
+            }
+        }
+
+        System.out.println();
+        System.out.print(shift);
+        for (int j = 0; j <y; j++) {
+            System.out.print("┖");
+            for (int i = 0; i < x/2; i++) {
+                System.out.print(floor);
+            }
+            System.out.print("┚");
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
         String space = " ";
 
-        int width = 20;
-        int height = 7;
+        rooms = 3;
+        int width = 10;
+        int height = 3;
         int floors = 3;
         drawRoof(width);
 
-        drawWalls(height,width,floors);
+        //drawWalls(height,width,floors);
 
+        //drawCube(50,6);
+        drawCube(width-2,3);
+        //drawCube(width/2,4);
+        //drawCube(4,6);
+        //drawCube(8);
+        //10-2
+        //20-4
+        //30-6
     }
 }
