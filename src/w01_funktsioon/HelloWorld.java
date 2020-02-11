@@ -31,15 +31,8 @@ public class HelloWorld {
         int kimney = 5;
 
         for (int a = width; a > 0; a--) {
-            if (a == kimney){
-                line += genSpace(a) + roofLeft + genSpace(c) + roofRight;
-            }
-            else if(a == kimney+1){
-                line += genSpace(a) + roofLeft + genSpace(c) + roofRight;
-            }
-            else{
-                line += genSpace(a) + roofLeft + genSpace(c) + roofRight;
-            }
+
+            line += genSpace(a) + roofLeft + genSpace(c) + roofRight;
 
             roof = roof + line + "\n";
 
@@ -101,17 +94,9 @@ public class HelloWorld {
         String wall = "│";
         //System.out.println((x+2/10)*2);
         String shift = genSpace(((x+2)/10)*2);
-        /*
-        for (int a = x-5; a > 0; a--) {
 
-            line += genSpace(a) + roofLeft + genSpace(x*2) + roofLeft +"\n";;
-
-            //line = "";
-            c+=2;
-        }
-        System.out.print(line);
-        */
         System.out.println();
+        System.out.print(" ");
         System.out.print(shift);
         for (int j = 0; j <y; j++) {
             System.out.print("┎");
@@ -122,16 +107,19 @@ public class HelloWorld {
         }
 
 
+
         System.out.print(shift);
+
         for (int j = 0; j <x-6; j++) {
             System.out.println("");
-            System.out.print(shift);
+            System.out.print(shift+" ");
             for (int i = 0; i <y; i++) {
                 System.out.print(wall + genSpace(x/2) + wall);
             }
         }
 
         System.out.println();
+        System.out.print(" ");
         System.out.print(shift);
         for (int j = 0; j <y; j++) {
             System.out.print("┖");
@@ -148,22 +136,22 @@ public class HelloWorld {
         String space = " ";
 
         rooms = 3;
-        int width = 20;
+        int width = 10;
         int height = 3;
         int floors = 3;
-        drawRoof(width);
+        //drawRoof(width);
 
         //drawWalls(height,width,floors);
 
         //drawCube(50,6);
-        drawCube(width-2,3);
+        //drawCube(width-2,1);
 
-        /*
-        for (int i = 7; i <20; i++) {
+
+        for (int i = 5; i <20; i++) {
             drawRoof(i);
-            drawCube(i-2,3);
+            drawCube(8,i-5);
             System.out.println();
-        }*/
+        }
 
 
 
