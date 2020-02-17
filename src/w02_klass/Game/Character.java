@@ -7,6 +7,7 @@ public class Character {
     private String name;
     private CharacterType characterType;
     private Direction direction;
+    Inventory inventory;
 
     String slogan = "";
 
@@ -17,7 +18,10 @@ public class Character {
         this.x = 30;
         this.y = 30;
 
+        inventory = new Inventory();
     }
+
+
 
     @Override
     public String toString() {
