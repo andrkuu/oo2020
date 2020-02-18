@@ -1,4 +1,4 @@
-package w02_klass.Game.items;
+package items;
 
 public enum ItemMaterial {
     BRONZE,SILVER,GOLD

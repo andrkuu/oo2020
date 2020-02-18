@@ -1,5 +1,4 @@
-package w02_klass.Game.items;
-
+package items;
 public class Item {
     private String name;
     private ItemType type;

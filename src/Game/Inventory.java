@@ -1,8 +1,6 @@
-package w02_klass.Game;
 
-import w02_klass.Game.items.Item;
+import items.Item;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
