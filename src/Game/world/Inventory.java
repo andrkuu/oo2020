@@ -1,3 +1,4 @@
+package world;
 
 import items.Item;
 
@@ -24,7 +25,6 @@ public class Inventory {
             items.put(item, quantity);
         }
 
-
     }
 
     public void removeItem(Item item, int quantity){
@@ -47,7 +47,7 @@ public class Inventory {
 
         }
         else{
-            System.out.println("Inventory dosnt contain this item");
+            System.out.println("world.Inventory dosnt contain this item");
         }
 
     }

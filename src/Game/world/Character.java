@@ -1,18 +1,23 @@
+package world;
 
-public class Character {
+import world.Position;
+
+import static world.Direction.*;
+
+public class Character extends WorldObject {
 
     private String name;
     private CharacterType characterType;
-    public Direction direction;
+
     public Inventory inventory;
-    public Position position;
+
 
     public String slogan = "";
 
     public Character(String name, CharacterType characterType, Position position){
         this.characterType = characterType;
         this.name = name;
-        this.direction = Direction.UP;
+        this.direction = UP;
         this.position = position;
 
         inventory = new Inventory();
@@ -24,7 +29,7 @@ public class Character {
 
 
 
-    void move(Direction direction){
+    public void move(Direction direction){
 
         this.direction = direction;
 

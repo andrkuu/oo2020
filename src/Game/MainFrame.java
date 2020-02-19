@@ -22,23 +22,7 @@ public class MainFrame extends  JFrame implements KeyListener {
                 MainFrame frame = new MainFrame();
                 frame.setLayout(new GridLayout(5, 5));
 
-                frame.addKeyListener(new KeyListener(){
-                    @Override
-                    public void keyPressed(KeyEvent e) {
-                        System.out.println(e.getKeyCode());
-                    }
 
-                    @Override
-                    public void keyTyped(KeyEvent e) {
-                        //System.out.println(e.getKeyCode());
-                    }
-
-
-                    @Override
-                    public void keyReleased(KeyEvent e) {
-                        System.out.println(e.getKeyCode());
-                    }
-                });
                 frame.setTitle("Square Move Practice");
                 frame.setResizable(false);
                 frame.setSize(600, 600);
@@ -54,5 +38,11 @@ public class MainFrame extends  JFrame implements KeyListener {
     @Override
     public void keyTyped(KeyEvent e) {
         System.out.println("key");
+    }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.drawRect(10, 10, 50, 50);
     }
 }
