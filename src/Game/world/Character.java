@@ -27,7 +27,9 @@ public class Character extends WorldObject {
         return direction;
     }
 
-
+    public String getName(){
+       return name;
+    }
 
     public void move(Direction direction){
 
@@ -36,10 +38,10 @@ public class Character extends WorldObject {
         switch (direction){
 
             case UP:
-                this.position.y++;
+                this.position.y--;
                 break;
             case DOWN:
-                this.position.y--;
+                this.position.y++;
                 break;
             case RIGHT:
                 this.position.x++;

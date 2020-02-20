@@ -55,7 +55,7 @@ public class Inventory {
     @Override
     public String toString() {
 
-        String ret = "I have: \n";
+        String ret = "";
 
         for (Item i : items.keySet()) {
 
