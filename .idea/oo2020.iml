@@ -3,21 +3,22 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/w02_klass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Game" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w01_funktsioon" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/w02_klass" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w03_klassikomplekt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w05_kontrolltoo1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w06_liides" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/w08_alamklassid" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w07_junit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/w08_alamklassid" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w09_tunnirakenduse_lahendus" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w10_tunnirakenduse_lahendus" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w11_proovikontrolltoo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w13_kontrolltoo2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w14_seminar" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w16_eksam" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Game" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/w04_crypt" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
