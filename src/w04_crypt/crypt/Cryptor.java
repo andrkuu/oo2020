@@ -2,7 +2,7 @@ package crypt;
 
 public class Cryptor {
 
-    int rotation = 1;
+    int rotation = 13;
 
     public String encrypt(String s){
         String newString = "";

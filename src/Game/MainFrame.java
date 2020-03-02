@@ -27,10 +27,10 @@ public class MainFrame extends  JFrame implements KeyListener {
 
     public static void LoadWorld(){
 
-        Character me = new Character("Andreas", CharacterType.WARRIOR, new Position(4,4));
-        Character enemy = new Character("Goblin",CharacterType.GOBLIN, new Position(8,8));
+        Character me = new Character("Andreas", CharacterType.WARRIOR, new Position(4,4),"O");
+        Character enemy = new Character("Goblin",CharacterType.GOBLIN, new Position(8,8),"O");
 
-        world = new WorldMap();
+        world = new WorldMap(20,10);
         world.addCharacter(me);
         world.addCharacter(enemy);
 
@@ -73,7 +73,7 @@ public class MainFrame extends  JFrame implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         int keyCode = e.getKeyCode();
-
+ /*
         Character me = world.worldCharacters.get(0);
 
         if(keyCode == KeyEvent.VK_W) {
@@ -91,6 +91,7 @@ public class MainFrame extends  JFrame implements KeyListener {
         else if(keyCode == KeyEvent.VK_Q) {
             System.out.println(me.inventory.toString());
         }
+        */
 
     }
 
