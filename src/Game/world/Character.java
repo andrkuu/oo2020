@@ -17,7 +17,7 @@ public class Character {
     private String name;
     private CharacterType characterType;
     public Direction direction;
-    private Inventory inventory;
+    public Inventory inventory;
     public Position position;
 
     public Character( String name, CharacterType characterType, Position position, String symbol){
@@ -26,7 +26,7 @@ public class Character {
         this.direction = Direction.RIGHT;
         this.symbol = symbol;
         this.position = position;
-
+        this.inventory = new Inventory(10);
     }
 
     public String getName(){

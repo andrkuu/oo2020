@@ -10,19 +10,42 @@ public class Inventory {
 
 
     private Map<Item, Integer> items;
+    private int size;
 
-    Inventory(){
+    Inventory(int size){
         items = new HashMap<>();
+        this.size = size;
     }
 
 
-    public void addItem(Item item, int quantity){
-
-        if(items.containsKey(item)){
-            items.put(item, items.get(item) + quantity);
+    public void addItems(Item[] items){
+        if (items.length > this.size){
+            for(Item item : items){
+                if(this.items.containsKey(item)){
+                    this.items.put(item, this.items.get(item) + 1);
+                }
+                else{
+                    this.items.put(item, 1);
+                }
+            }
         }
         else{
-            items.put(item, quantity);
+            System.out.println("You tried to add to many items");
+        }
+
+    }
+
+    public void addItem(Item item, int quantity){
+        if (items.size() + quantity <= this.size){
+            if(items.containsKey(item)){
+                items.put(item, items.get(item) + quantity);
+            }
+            else{
+                items.put(item, quantity);
+            }
+        }
+        else{
+            System.out.println("You tried to add to many items");
         }
 
     }
@@ -47,7 +70,7 @@ public class Inventory {
 
         }
         else{
-            System.out.println("world.Inventory dosnt contain this item");
+            System.out.println("Inventory dosnt contain this item");
         }
 
     }

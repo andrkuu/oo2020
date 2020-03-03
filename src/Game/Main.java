@@ -1,4 +1,7 @@
 import Renderer.ConsoleRenderer;
+import items.Item;
+import items.ItemMaterial;
+import items.ItemType;
 import world.*;
 import world.Character;
 
@@ -17,6 +20,9 @@ public class Main {
         world.addCharacter(player);
         world.addCharacter(enemy);
 
+        Item[] items = new Item[2];
+
+        items[0] = new Item("Shield", ItemType.SHIELD, ItemMaterial.BRONZE,5.0);
 
         String input = "";
         Scanner scanner = new Scanner(System.in);

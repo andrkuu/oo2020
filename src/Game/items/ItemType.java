@@ -1,5 +1,5 @@
 package items;
 
 public enum ItemType {
-    SWORD,SHIELD,HELMET
+    SWORD,SHIELD,HELMET,WORLDOBJECT
 }
