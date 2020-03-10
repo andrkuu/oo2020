@@ -1,0 +1,3 @@
+3
+Lugeda failist esimesel real oleva nihke numbri ning ülejäänud read
+selle nihke abil šifreerida ning salvestada šifreeritud kujul teise faili.
