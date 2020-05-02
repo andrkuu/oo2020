@@ -8,4 +8,9 @@ public class Square extends Shape{
         this.y = y;
         this.setArea(x*y);
     }
+
+    @Override
+    public float getArea() {
+        return super.getArea();
+    }
 }
