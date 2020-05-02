@@ -20,8 +20,8 @@ public class Round implements Objects{
         Random r = new Random();
         int min = 0;
         int max = 100;
-
-        genNumber = r.nextInt((max - min) + 1) + min;
+        genNumber = 0;
+        //genNumber = r.nextInt((max - min) + 1) + min;
         return genNumber;
     }
 
