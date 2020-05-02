@@ -20,6 +20,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/w16_eksam" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w04_crypt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/KTs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/w08_roulette" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
