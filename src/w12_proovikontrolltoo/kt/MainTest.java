@@ -6,11 +6,11 @@ import roulette.Round;
 import static org.junit.Assert.*;
 
 public class MainTest {
-
+    float vaatQuantity = 30;
 
     @Test
     public void BottleTest(){
-        float vaatQuantity = 30;
+
         JoogiVaat vaat1 = new JoogiVaat(100,vaatQuantity);
         System.out.println(vaat1);
         vaat1.Fill(90);
@@ -31,6 +31,23 @@ public class MainTest {
 
         assertTrue( kast1.getWeight() == jook1.GetWeight()*jookCount );
     }
+
+    @Test
+    public void VaatTest(){
+        JoogiVaat vaat1 = new JoogiVaat(100,vaatQuantity);
+        vaat1.Fill(90);
+
+        Joogipudel jook1 = new Joogipudel(Drink_Type.KALI,Bottle_Type.KLAAS,120,300);
+        Joogipudel jook2= new Joogipudel(Drink_Type.KALI,Bottle_Type.KLAAS,20,300);
+
+
+        assertFalse(vaat1.FillBottle(jook1));
+        assertTrue(vaat1.FillBottle(jook2));
+
+        assertTrue(vaatQuantity -jook2.GetVolume() == vaat1.getQuantity());
+
+    }
+
 
 
 
