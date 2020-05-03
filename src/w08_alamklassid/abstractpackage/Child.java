@@ -2,7 +2,7 @@ package abstractpackage;
 
 public class Child extends Parent {
     public String eat = "Kellogs";
-    public String travel = "Car";
+    public String travel = "kt.Car";
 
     public void howMyDayStarts(){
         super.howMyDayStarts();

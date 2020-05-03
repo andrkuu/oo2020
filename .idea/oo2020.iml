@@ -14,13 +14,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/w08_alamklassid" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w09_tunnirakenduse_lahendus" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w10_tunnirakenduse_lahendus" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/w11_proovikontrolltoo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/w11_springboot" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w13_kontrolltoo2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w14_seminar" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w16_eksam" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w04_crypt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/KTs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/w08_roulette" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/w12_proovikontrolltoo" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
