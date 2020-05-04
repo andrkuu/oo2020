@@ -25,6 +25,8 @@ public class Main {
             Generics.getFirst(strings2)
         );
 
+
+
         SimplePair<String, String> pair = new SimplePair<>("name", "Raimo");
         
         System.out.println(
