@@ -17,6 +17,13 @@ public class JoogiVaat {
         return quantity;
     }
 
+    public boolean FillBottles(Joogipudel... bottles){
+        for (Joogipudel bottle: bottles) {
+            FillBottle(bottle);
+        }
+        return true;
+    }
+
     public boolean FillBottle(Joogipudel bottle){
         System.out.println("Alustan " +bottle.GetVolume() +" liitrise pudeli täitmist");
         if(quantity > bottle.GetVolume()){

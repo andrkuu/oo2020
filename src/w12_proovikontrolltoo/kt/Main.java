@@ -12,13 +12,15 @@ public class Main {
         System.out.println(vaat1);
 
         Joogipudel jook1 = new Joogipudel(Drink_Type.KALI,Bottle_Type.KLAAS,29,300);
-        vaat1.FillBottle(jook1);
+        //vaat1.FillBottle(jook1);
 
         Joogipudel jook2 = new Joogipudel(Drink_Type.LIMONAAD,Bottle_Type.KLAAS,29,300);
-        vaat1.FillBottle(jook2);
+        //vaat1.FillBottle(jook2);
 
         Joogipudel jook3 = new Joogipudel(Drink_Type.KALI,Bottle_Type.PLASTIK,29,300);
-        vaat1.FillBottle(jook3);
+        //vaat1.FillBottle(jook3);
+
+        vaat1.FillBottles(jook1,jook2,jook3);
 
         JoogiKast kast1 = new JoogiKast();
         kast1.AddBottle(jook1);
