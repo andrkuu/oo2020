@@ -1,5 +1,6 @@
 package trycatch;
 
+import javax.jws.soap.SOAPBinding;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -105,12 +106,20 @@ public class Main {
 
     }
 
+    public static String replaceWord(String sentence, String oldword, String newWord){
+        List<String> lines = Arrays.asList(sentence.split(" "));
+        String result = lines.stream()
+                .map(line -> line.replaceAll(oldword,newWord))
+                .collect(Collectors.joining(" "));
+        return result;
+    }
+
     public static String removeWord(String sentence, String word){
         List<String> lines = Arrays.asList(sentence.split(" "));
-        List<String> result = lines.stream()
+        String result = lines.stream()
                 .filter(line -> !word.equals(line))
-                .collect(Collectors.toList());
-        return result.toString();
+                .collect(Collectors.joining(" "));
+        return result;
     }
 
     public static void ex03(){
@@ -124,8 +133,10 @@ public class Main {
         result.forEach(System.out::println);
 
         String sentence = "Java on programmeerimiskeel. Java -ga tegeledes saad teha palju asju. Mulle meeldib Java";
-        System.out.println(removeWord(sentence,"Java"));
+        System.out.println(sentence);
 
+        System.out.println(removeWord(sentence,"Java"));
+        System.out.println(replaceWord(sentence,"Java","C#"));
 
 
     }
@@ -165,7 +176,7 @@ public class Main {
 
         //ex01();
         //ex02();
-        //ex03();
+        ex03();
         //ex04();
     }
 
