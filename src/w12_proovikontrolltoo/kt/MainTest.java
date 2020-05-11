@@ -48,7 +48,18 @@ public class MainTest {
 
     }
 
-
+    /*
+    assertEquals,
+    assertArrayEquals,
+    assertTrue,
+    assertFalse,
+    assertNotEquals,
+    assertNotNull,
+    assertNotSame,
+    assertNull,
+    assertSame,
+    assertThat)
+     */
 
 
     public static void main(String[] args) {

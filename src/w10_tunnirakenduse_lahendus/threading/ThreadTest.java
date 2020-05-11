@@ -60,10 +60,15 @@ public class ThreadTest {
     }
 
     public static void ex01(){
+
+        for (int i = 0; i <5 ; i++) {
+            new Thread(ThreadTest::printCharacters).start();
+        }
+
         new Thread(ThreadTest::printCharacters).start();
         new Thread(ThreadTest::printCharactersDesc).start();
-        //new Thread(ThreadTest::printNumbersAsc).start();
-        //new Thread(ThreadTest::printNumbersDesc).start();
+        new Thread(ThreadTest::printNumbersAsc).start();
+        new Thread(ThreadTest::printNumbersDesc).start();
     }
 
     public static void main(String[] args) {

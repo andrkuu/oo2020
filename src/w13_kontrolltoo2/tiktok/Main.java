@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        float length = 10f;
-        Clock clock = new Clock(length * 10000);
+        float length = 1f;
+        Clock clock = new Clock(length * 100000);
 
         Gear g1 = new Gear(9,"A");
         Gear g2 = new Gear(6,"B");
@@ -23,6 +23,8 @@ public class Main {
 
         Hand secondHand = new SecondHand(1,"S");
         Hand minuteHand = new MinuteHand(1,"M");
+
+
 
         //Lisa ratta külge osuti
         g2.JoinHand(secondHand);
